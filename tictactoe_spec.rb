@@ -39,7 +39,4 @@ describe "TicTacToe" do
       game.win?.should == true
     end
   end
-
-  #describe
-
 end
