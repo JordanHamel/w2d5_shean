@@ -36,6 +36,7 @@ describe "#set_union" do
   end
 
   it "should not duplicate values in an intersect" do
+    #split this into two lines??
     set_union({:x => true, :y => true}, {:y => true, :z => true}).should == {:x => true, :y => true, :z => true}
   end
 end
