@@ -29,6 +29,10 @@ describe "#two_sum" do
   it "should return true if there are pairs" do
     [1,2,3,-1].two_sum.should == true
   end
+  
+  #maybe add a test for two zeros
+  #maybe add a test for something like this: [1, 2, -1, 3, 1] where three numbers
+  #create two pairs
 end
 
 describe "TowersOfHanoi" do
@@ -78,6 +82,8 @@ describe "TowersOfHanoi" do
     end
 
     it "should return true if game is won" do
+      #instead of making all of these moves, you could just 
+      #reassign the towers to be in a winning position here
       towers.move(0,1)
       towers.move(0,2)
       towers.move(1,2)
