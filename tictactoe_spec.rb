@@ -20,6 +20,9 @@ describe "TicTacToe" do
       game.mark(0,0, :x)
       game.valid_move?(0,0)
     end
+    
+    #it "returns false if the space if off the board"
+    #it "returns true for a valid move"
   end
 
   describe "#mark" do
@@ -38,5 +41,7 @@ describe "TicTacToe" do
 
       game.win?.should == true
     end
+    
+    # it "returns false if the game isn't won"
   end
 end
