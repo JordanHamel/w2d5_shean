@@ -12,4 +12,7 @@ describe "#caesar_cipher" do
   it "shouldn't adjust needlessly" do
     caesar_cipher("hello", 0).should == "hello"
   end
+  
+  #add a test for an empty string
+  #add a test for things that should loop back to the beginning of the alphabet. ex: ("hello", 30)
 end
